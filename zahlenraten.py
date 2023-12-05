@@ -3,7 +3,6 @@ import random
 zufallszahl = random.randint(1, 100)
 zuege = 3
 
-print(zufallszahl)
 def zahlenraten():
     global zuege
     while zuege != 0:
