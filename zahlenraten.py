@@ -3,6 +3,7 @@ import random
 zufallszahl = random.randint(1, 100)
 zuege = 3
 
+print(zufallszahl)
 def zahlenraten():
     global zuege
     while zuege != 0:
@@ -19,13 +20,14 @@ def zahlenraten():
 
         elif user_eingabe == zufallszahl:
             print ("Glückwunsch: Sie haben gewonnen")
-            return
+            break
 
-    print("Sorry, Sie haben leider Verloren. Die gesuchte Zahl wäre ", zufallszahl, "gewesen")
+        print("Sorry, Sie haben leider Verloren. Die gesuchte Zahl wäre ", zufallszahl, "gewesen")
 
     weiter = input("Möchten sie nochmal spielen? (j)")
 
     if weiter ==" j":
         zahlenraten()
+    print("Auf wiedersehen")
 
 zahlenraten()
